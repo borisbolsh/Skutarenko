@@ -29,11 +29,11 @@ UInt64.max: \(UInt64.max)
 
 // 2 part
 
-let a: Int = 3
+let a = 3
 let b: Float = 2.05
-let c: Double = 3.333
+let c = 3.333
 
-let sumAbcInt = a + Int(b) + Int(c)
+let sumAbcInt = Int(Double(a) + Double(b) + c)
 let sumAbcFloat = Float(a) + b + Float(c)
 let sumAbcDouble = Double(a) + Double(b) + c
 
@@ -41,7 +41,10 @@ let sumAbcDouble = Double(a) + Double(b) + c
 // 3 part
 
 if Double(sumAbcInt) < sumAbcDouble {
-    print("Double is preferred. It's more correct")
-} else {
-    print("Nevermind")
+    print("Double is greater. It's more correct")
+}  else if Double(sumAbcInt) == sumAbcDouble {
+    print("Int is equal")
+}
+else {
+    print("Int is greater")
 }
