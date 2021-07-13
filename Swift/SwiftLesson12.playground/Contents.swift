@@ -45,6 +45,16 @@ enum Figure {
     
 }
 
-let WhiteQueen = Figure.figure(name: .Queen, color: .White, x: .A, y:.Three)
+let whiteQueen = Figure.figure(name: .Queen, color: .White, x: .A, y:.Three)
 
+let blackPawn = Figure.figure(name: .Pawn, color: .Black, x: .B, y:.Two)
+
+let blackKing = Figure.figure(name: .King, color: .Black, x: .E, y:.Five)
+
+var figureArray = [whiteQueen, blackPawn, blackKing]
+
+
+//for figure in figureArray {
+//    print("figure: \(figure.name.rawValue), color: \(figure.color.rawValue), x: \(figure.x.rawValue), y: \(figure.y.rawValue)")
+//}
 
