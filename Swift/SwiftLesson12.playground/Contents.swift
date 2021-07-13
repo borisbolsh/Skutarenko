@@ -54,7 +54,4 @@ let blackKing = Figure.figure(name: .King, color: .Black, x: .E, y:.Five)
 var figureArray = [whiteQueen, blackPawn, blackKing]
 
 
-//for figure in figureArray {
-//    print("figure: \(figure.name.rawValue), color: \(figure.color.rawValue), x: \(figure.x.rawValue), y: \(figure.y.rawValue)")
-//}
-
+// More work with enum needed to be done
