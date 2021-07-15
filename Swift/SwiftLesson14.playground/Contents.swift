@@ -44,9 +44,10 @@ struct Student {
             }
         }
     }
+    var dateOfBirth: Date
 }
 
-var student1 = Student(firstName: "Vlad", lastName: "Komov")
+var student1 = Student(firstName: "Vlad", lastName: "Komov", dateOfBirth: Date(day: 21, month: 12, year: 1987))
 
 student1.firstName
 student1.firstName = "Mike"
@@ -66,5 +67,43 @@ student1.firstName
 print("---")
 student1.lastName
 
-
+student1.fullName
 student2.fullName
+
+
+
+print("----- Part 2 -----")
+
+struct Date{
+    var day: Int
+    var month: Int
+    var year: Int
+    var age: Int {
+        get {
+            let months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+            var countDays = 0
+            var count = 1
+            for month in months {
+                if count <= month - 1 {countDays += month}
+                count = count + 1
+            }
+            if countDays + day <= 151 {
+                return 2021 - year
+            } else {
+                return 2021 - year - 1
+            }
+        }
+    }
+    
+    var howLongStudy: Int {
+        get {
+            switch age {
+            case 0...6 : return 0
+            case 17... : return 11
+            default: return age - 6
+            }
+        }
+    }
+}
+
+student1.dateOfBirth.howLongStudy
