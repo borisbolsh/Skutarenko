@@ -60,3 +60,68 @@ print("\(ColorGamma.firstColor)")
 
 
 print("\n----- Task 3 ----")
+
+class Human {
+    var name: String {
+        didSet {
+            if name.count < Human.minNameLenght || name.count > Human.maxNameLenght { name = oldValue }
+        }
+    }
+    var surname: String {
+        didSet {
+            if surname.count < Human.minNameLenght  || surname.count > Human.maxNameLenght { surname = oldValue }
+        }
+    }
+    var age: Int {
+        didSet {
+            if age < Human.minAge || age > Human.maxAge { age = oldValue }
+        }
+    }
+    var height: Int {
+        didSet {
+            if height < Human.minHeight || height > Human.maxHeight { height = oldValue }
+        }
+    }
+    var weight: Int {
+        didSet {
+            if weight < Human.minWeight || height > Human.maxWeight { weight = oldValue }
+        }
+    }
+    
+    static var maxAge = 110
+    static var minAge = 14
+    static var maxNameLenght = 15
+    static var minNameLenght = 2
+    static var maxHeight = 250
+    static var minHeight = 120
+    static var maxWeight = 200
+    static var minWeight = 30
+    static var countHumans = 0
+    
+    init(name: String, surname: String, age: Int, height: Int, weight: Int) {
+        self.name = name
+        self.surname = surname
+        self.age = age
+        self.height = height
+        self.weight = weight
+        
+        Human.countHumans += 1
+    }
+}
+
+
+var manOne = Human(name: "Ivan", surname: "Ivanov", age: 33, height: 180, weight: 80)
+var womenTwo = Human(name: "Helen", surname: "Smirnova", age: 44, height: 170, weight: 66)
+
+manOne.name = ""
+manOne.surname = "Kuznecov"
+manOne.age = 99
+
+print("""
+Man
+name: \(manOne.name)
+surname: \(manOne.surname)
+age: \(manOne.age)
+
+Count human \(Human.countHumans)
+""")
