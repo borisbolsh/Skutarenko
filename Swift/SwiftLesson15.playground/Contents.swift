@@ -37,3 +37,26 @@ fileOne.content
 fileOne.isHidden
 print("\(fileOne.path)")
 
+
+
+print("\n----- Task 2 ----")
+
+enum ColorGamma: Int {
+    static var numberColor = 3
+    static var firstColor = ColorGamma.red
+    static var lastColor = ColorGamma.green
+    
+    case red = 0xff0000
+    case blue = 0x0000ff
+    case green = 0x00ff00
+    case white = 0x000000
+    case black = 0xffffff
+    case cyan = 0x00ffff
+    case yellow = 0xffff00
+}
+
+print("\(ColorGamma.firstColor)")
+
+
+
+print("\n----- Task 3 ----")
