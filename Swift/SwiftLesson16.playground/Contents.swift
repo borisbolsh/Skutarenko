@@ -9,7 +9,7 @@ struct Room {
 }
 
 struct Player {
- 
+    
     var x: Int
     var y: Int
     
@@ -53,6 +53,9 @@ struct Point {
 }
 
 enum Direction {
-    case Left, Right, Up, Down
+    case Left,
+         Right,
+         Up,
+         Down
 }
 
