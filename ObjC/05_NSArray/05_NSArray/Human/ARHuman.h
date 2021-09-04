@@ -6,21 +6,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ARHuman : NSObject
 
 typedef NS_ENUM(NSUInteger, ARGender) {
-  Male,
-  Famale
+    Male,
+    Female
 };
 
 @property(strong, nonatomic) NSString * name;
-@property(nonatomic) ARGender gender;
-@property(nonatomic) int height;
-@property(nonatomic) float weight;
+@property(assign, nonatomic) ARGender gender;
+@property(assign, nonatomic) NSInteger height;
+@property(assign, nonatomic) CGFloat weight;
 
 - (void) move;
 

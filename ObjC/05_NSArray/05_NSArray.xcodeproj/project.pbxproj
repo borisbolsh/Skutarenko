@@ -15,6 +15,9 @@
 		4501CA7926E346D600FDAD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4501CA7726E346D600FDAD03 /* LaunchScreen.storyboard */; };
 		4501CA7C26E346D600FDAD03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501CA7B26E346D600FDAD03 /* main.m */; };
 		4501CA8426E3474C00FDAD03 /* ARHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501CA8326E3474C00FDAD03 /* ARHuman.m */; };
+		4501CA8826E35CC500FDAD03 /* ARRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501CA8726E35CC500FDAD03 /* ARRunner.m */; };
+		4501CA8B26E35DBF00FDAD03 /* ARBicyclist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501CA8A26E35DBF00FDAD03 /* ARBicyclist.m */; };
+		4501CA8E26E35E9A00FDAD03 /* ARSwimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501CA8D26E35E9A00FDAD03 /* ARSwimmer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		4501CA7B26E346D600FDAD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4501CA8226E3474C00FDAD03 /* ARHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARHuman.h; sourceTree = "<group>"; };
 		4501CA8326E3474C00FDAD03 /* ARHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARHuman.m; sourceTree = "<group>"; };
+		4501CA8626E35CC500FDAD03 /* ARRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRunner.h; sourceTree = "<group>"; };
+		4501CA8726E35CC500FDAD03 /* ARRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRunner.m; sourceTree = "<group>"; };
+		4501CA8926E35DBF00FDAD03 /* ARBicyclist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARBicyclist.h; sourceTree = "<group>"; };
+		4501CA8A26E35DBF00FDAD03 /* ARBicyclist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARBicyclist.m; sourceTree = "<group>"; };
+		4501CA8C26E35E9A00FDAD03 /* ARSwimmer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSwimmer.h; sourceTree = "<group>"; };
+		4501CA8D26E35E9A00FDAD03 /* ARSwimmer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSwimmer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,12 @@
 			children = (
 				4501CA8226E3474C00FDAD03 /* ARHuman.h */,
 				4501CA8326E3474C00FDAD03 /* ARHuman.m */,
+				4501CA8626E35CC500FDAD03 /* ARRunner.h */,
+				4501CA8726E35CC500FDAD03 /* ARRunner.m */,
+				4501CA8926E35DBF00FDAD03 /* ARBicyclist.h */,
+				4501CA8A26E35DBF00FDAD03 /* ARBicyclist.m */,
+				4501CA8C26E35E9A00FDAD03 /* ARSwimmer.h */,
+				4501CA8D26E35E9A00FDAD03 /* ARSwimmer.m */,
 			);
 			path = Human;
 			sourceTree = "<group>";
@@ -158,10 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4501CA8826E35CC500FDAD03 /* ARRunner.m in Sources */,
 				4501CA8426E3474C00FDAD03 /* ARHuman.m in Sources */,
 				4501CA7126E346D400FDAD03 /* ViewController.m in Sources */,
 				4501CA6B26E346D400FDAD03 /* AppDelegate.m in Sources */,
 				4501CA7C26E346D600FDAD03 /* main.m in Sources */,
+				4501CA8E26E35E9A00FDAD03 /* ARSwimmer.m in Sources */,
+				4501CA8B26E35DBF00FDAD03 /* ARBicyclist.m in Sources */,
 				4501CA6E26E346D400FDAD03 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

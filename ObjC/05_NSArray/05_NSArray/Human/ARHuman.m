@@ -9,9 +9,8 @@
 
 @implementation ARHuman
 
-
 - (void) move {
-    NSLog(@"I'm moving %@", self.name);
+    NSLog(@"I'm moving. %@", self.name);
 }
 
 @end
